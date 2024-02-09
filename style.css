@@ -1,0 +1,155 @@
+/* * {
+    font-size: 1.3vw;
+    font-family: "Epilogue", sans-serif;
+  }
+
+  html {
+    --scrollbarBG: #fff;
+    --thumbBG: #000608;
+  }
+
+  body {
+    background: #ccc;
+  } */
+
+body .card {
+    position: absolute;
+    top: 30%;
+    height: 280px;
+    width: 350px;
+    background-color: rgb(198, 201, 209);
+    /* margin-left: 30vw; */
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: 5vw;
+    /* box-shadow: 2vw 2vw 12vw 3vw #df0202; */
+}
+
+body .card #header {
+    height: 30px;
+    background: #ff0000;
+    border-top-left-radius: 40px;
+    padding: 1px;
+    text-align: left center;
+    padding-left: 4vw;
+}
+
+body .card #header h1 {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: sans-serif;
+    /* padding: 1px; */
+}
+
+body .card #message-section::-webkit-scrollbar {
+    width: 10px;
+}
+
+body .card #message-section {
+    height: 200px;
+    /* padding: 0 2.5vw; */
+    overflow-y: auto;
+    /* scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG); */
+}
+
+/* body .card #message-section::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  } */
+
+body .card #message-section::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+body .card #message-section #bot,
+body .card #message-section #user {
+    position: relative;
+    bottom: 0;
+    height: 12px;
+    width: 100%;
+    overflow: hidden;
+    border: 0.15vw solid #010101;
+    /* background-color: rgb(254, 243, 243); */
+    border-radius: 30px 0vw 30px 0vw;
+
+    margin: 1vw;
+}
+
+body .card #message-section #user {
+    border: 1.5px solid #000;
+    border-radius: 1.5vw 0vw 1.5vw 1.8vw;
+    background-color: #000;
+    float: right;
+}
+
+body .card #message-section #user #user-response {
+    color: #fff;
+}
+
+body .card #message-section .message {
+    color: #000;
+    clear: both;
+    line-height: 1.2vw;
+    font-size: 1.2vw;
+    padding: 8px;
+    position: relative;
+    margin: 8px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    z-index: 2;
+}
+
+body .card #input-section {
+    z-index: 1;
+    /* padding: 0 2.5vw; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 42px;
+    width: 100%;
+}
+
+body .card #input-section input {
+    color: #0b25ce;
+    background: transparent;
+    min-width: 0.5vw;
+    outline: none;
+    height: 30px;
+    width: 26vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #cf0b0b 0.1vw;
+}
+
+body .card .send {
+    position: relative;
+    padding-bottom: 2px;
+    background: transparent;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    /* flex: 0 0 auto; */
+    /* margin-left: 1.4vw;
+    margin-right: 0vw;
+    padding: 0; */
+    /* outline: none; */
+}
+
+body .card .send .circle {
+    position: relative;
+    width: 4.vw;
+    height: 4.vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .card .send .circle i {
+    font-size: 3vw;
+    margin-left: -1vw;
+    margin-top: 1vw;
+}
